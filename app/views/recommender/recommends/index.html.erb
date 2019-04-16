@@ -1,0 +1,9 @@
+<div id="container"></div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    Recommender.Collections.Recommends.prototype.url = '<%= recommends_path %>';
+    new Recommender.Routers.Recommends();
+    Backbone.history.start();
+  })
+</script>
